@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My HTML Showcase Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #eee;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    main {
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #999;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My HTML Showcase Page</h1>
+    <p>A simple demonstration of HTML5 features</p>
+  </header>
+
+  <nav>
+    <a href="#lists">Lists</a>
+    <a href="#table">Table</a>
+    <a href="#media">Media</a>
+    <a href="#form">Form</a>
+  </nav>
+
+  <main>
+    <section id="lists">
+      <h2>Fruits I Like</h2>
+      <ul>
+        <li>Bananas</li>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Mangoes</li>
+      </ul>
+
+      <h3>Steps to Make Tea</h3>
+      <ol>
+        <li>Boil water</li>
+        <li>Add tea leaves</li>
+        <li>Let it steep</li>
+        <li>Strain and serve</li>
+      </ol>
+    </section>
+
+    <section id="table">
+      <h2>Weekly Timetable</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Gym</td>
+            <td>6:00 AM</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Swimming</td>
+            <td>7:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Yoga</td>
+            <td>6:30 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Media Showcase</h2>
+      <h3>My Favorite Animal</h3>
+      <img src="https://via.placeholder.com/400x200" alt="A cute animal" width="400" />
+
+      <h3>Relaxing Music</h3>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required minlength="3" placeholder="John Doe" />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="age">Age (18+)</label>
+          <input type="number" id="age" name="age" min="18" max="120" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+          <label for="username">Username *</label>
+          <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9_]{5,}$"
+                 title="At least 5 characters. Letters, numbers and underscore only." />
+
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+
+          <label for="confirm">Confirm Password *</label>
+          <input type="password" id="confirm" name="confirm" required minlength="6" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="color">Favorite Color</label>
+          <input type="color" id="color" name="color" />
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" />
+
+          <label for="bio">Short Bio</label>
+          <textarea id="bio" name="bio" rows="4" maxlength="300"></textarea>
+
+          <label for="plan">Choose a Plan *</label>
+          <select id="plan" name="plan" required>
+            <option value="">-- Select Plan --</option>
+            <option value="basic">Basic</option>
+            <option value="pro">Pro</option>
+            <option value="premium">Premium</option>
+          </select>
+
+          <label>
+            <input type="checkbox" name="terms" required />
+            I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My HTML Showcase | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>

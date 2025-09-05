@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- The <title> tag sets the page title shown in the browser tab -->
+        <title>Week 2 - Enhanced HTML Elements</title>
+    </head>
+    <body>
+        <!-- <h2> is used for section headings -->
+        <h2>Definition Lists</h2>
+        <!-- <dl> is a definition list, <dt> is the term, <dd> is the definition -->
+        <dl>
+            <dt>Backend</dt>
+            <dd>A 'server' software that users do not interact with directly and where application logic resides.</dd>
+            <dt>Frontend</dt>
+            <dd>The presentation layer of software where users interact with.</dd>
+        </dl>
+        <h2>Nested Lists</h2>
+        <!-- <ul> is an unordered (bulleted) list, <li> is a list item -->
+        <ul>
+            <li>Fruits
+                <!-- <ol> is an ordered (numbered/lettered) list, type="a" gives letters -->
+                <ol type="a">
+                    <li>Apple
+                        <!-- Nested <ul> for sub-items under Apple -->
+                        <ul>
+                            <li>Red Apple</li>
+                            <li>Green Apple</li>
+                        </ul>
+                    </li>
+                    <li>Banana</li>
+                    <li>Cherry</li>
+                </ol>
+            </li>
+            <li>Vegetables
+                <!-- <ol> with type="i" gives roman numerals -->
+                <ol type="i">
+                    <li>Carrot</li>
+                    <li>Broccoli</li>
+                    <li>Spinach</li>
+                </ol>
+            </li>
+        </ul>
+        <h2>Images</h2>
+        <!-- <img> displays images; src is the image path, alt is alternative text, width/height set size -->
+        <img src="images/breakfast.jpg" alt="Picture of desk with cookies and a laptop." width="300" height="250">
+        <img src="https://images.pexels.com/photos/32822357/pexels-photo-32822357.jpeg" alt="Picture of a horse." width="300" height="250">
+        <h2>Video</h2>
+        <!-- <video> embeds a video; controls adds play/pause, width/height set size -->
+        <video controls width="350" height="200">
+            <!-- <source> specifies video file and type -->
+            <source src="https://videos.pexels.com/video-files/3987730/3987730-hd_1920_1080_24fps.mp4" type="video/mp4">
+            <!-- Fallback text if video is not supported -->
+            Your browser does not support the video tag.
+        </video>
+        <h3>Audio</h3>
+        <!-- <audio> embeds audio; controls adds play/pause -->
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        </audio>
+        <h2>Tables</h2>
+        <!-- <table> creates a table; border/cellpadding for appearance -->
+        <table border="1" cellpadding="10">
+            <thead>
+                <!-- <tr> is a table row, <th> is a header cell -->
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <td> is a table data cell -->
+                <tr>
+                    <td>Monday</td>
+                    <td>Gym</td>    
+                    <td>6:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Swimming</td>
+                    <td>7:00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Forms</h2>
+        <!-- <form> collects user input; action is where data goes, method is how it's sent -->
+        <form action="location" method="post" enctype="multipart/form-data">
+            <!-- <label> describes the input field -->
+            <label for="name">Name:</label>
+            <!-- <input type="text"> for text input -->
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <!-- <input type="email"> for email input -->
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <!-- <input type="password"> for password input -->
+            <input type="password" id="password" name="password" required>
+
+            <label for="age">Age:</label>
+            <!-- <input type="number"> for numeric input -->
+            <input type="number" id="age" name="age" min="1" max="120">
+
+            <label for="dob">Date of Birth:</label>
+            <!-- <input type="date"> for date selection -->
+            <input type="date" id="dob" name="dob">
+
+            <label for="color">Favorite Color:</label>
+            <!-- <input type="color"> for color picker -->
+            <input type="color" id="color" name="color">
+
+            <label for="gender">Gender:</label>
+            <!-- <select> for dropdown selection -->
+            <select id="gender" name="gender">
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="bio">Short Bio:</label>
+            <!-- <textarea> for multi-line text input -->
+            <textarea id="bio" name="bio"></textarea>
+
+            <label for="website">Website:</label>
+            <!-- <input type="url"> for website URL input -->
+            <input type="url" id="website" name="website">
+
+            <label for="file">Upload File:</label>
+            <!-- <input type="file"> for file upload -->
+            <input type="file" id="file" name="file">
+
+            <label for="range">Rate your experience (1-10):</label>
+            <!-- <input type="range"> for slider input -->
+            <input type="range" id="range" name="experience" min="1" max="10">
+
+            <!-- <input type="checkbox"> for boolean choice -->
+            <label>
+                <input type="checkbox" name="subscribe" value="yes">
+                Subscribe to newsletter
+            </label>
+
+            <!-- <input type="radio"> for single choice among options -->
+            <label>
+                <input type="radio" name="contact" value="email"> Contact by Email
+            </label>
+            <label>
+                <input type="radio" name="contact" value="phone"> Contact by Phone
+            </label>
+
+            <!-- <input type="hidden"> for hidden data -->
+            <input type="hidden" name="formType" value="registration">
+
+            <!-- <input type="submit"> for form submission -->
+            <input type="submit" value="Submit">
+            <!-- <input type="reset"> to clear the form -->
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

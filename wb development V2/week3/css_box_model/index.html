@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Styled Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About This Page</h2>
+            <p>This page demonstrates the CSS Box Model, including margins, padding, and borders. 
+               Each section has a background color to help visualize its boundaries.</p>
+            <p>The Box Model consists of four layers: <strong>Content</strong>, <strong>Padding</strong>, <strong>Border</strong>, 
+               and <strong>Margin</strong>.</p>
+        </section>
+
+        <section class="card">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design & Development</li>
+                <li>Graphic Design & Branding</li>
+                <li>SEO Optimization</li>
+                <li>IT Consultation</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Pricing Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Features</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>3 Pages, Email Support</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td>5 Pages, SEO, Chat Support</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>Unlimited Pages, SEO, Priority Support</td>
+                        <td>$399</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Box Model Visual Demo</h2>
+            <div class="box-model-demo">
+                <div class="margin-layer">Margin
+                    <div class="border-layer">Border
+                        <div class="padding-layer">Padding
+                            <div class="content-layer">Content Area</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>This colored box shows how the Box Model works:  
+               <span style="color:#ff9999;">Margin</span> → 
+               <span style="color:#ffcc66;">Border</span> → 
+               <span style="color:#ccff99;">Padding</span> → 
+               <span style="color:#99ccff;">Content</span>.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Styled Buttons</h2>
+            <p>Buttons also follow the Box Model. Padding makes them bigger, margins space them apart, and borders frame them.</p>
+            <button class="btn">Click Me</button>
+            <button class="btn">Learn More</button>
+            <button class="btn">Contact Us</button>
+        </section>
+
+        <section class="card">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>Understanding the CSS Box Model</h3>
+                <p>The Box Model is the foundation of CSS layout. Learn how margins, padding, and borders work together to structure content.</p>
+            </article>
+            <article>
+                <h3>Top 5 CSS Tips for Beginners</h3>
+                <p>From using classes wisely to understanding display properties, these tips will make your styling cleaner and more efficient.</p>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | Designed for CSS Practice</p>
+    </footer>
+
+</body>
+</html>

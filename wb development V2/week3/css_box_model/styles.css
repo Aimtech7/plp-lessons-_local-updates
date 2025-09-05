@@ -1,0 +1,151 @@
+/* ===== Base Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #357ab8;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Card Sections ===== */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #357ab8;
+}
+
+/* ===== Box Model Demo ===== */
+.box-model-demo {
+    display: inline-block;
+}
+
+.margin-layer {
+    background-color: #ff9999;
+    padding: 20px;
+}
+
+.border-layer {
+    background-color: #ffcc66;
+    padding: 20px;
+    border: 5px solid #cc6600;
+}
+
+.padding-layer {
+    background-color: #ccff99;
+    padding: 20px;
+}
+
+.content-layer {
+    background-color: #99ccff;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #336699;
+}
+
+/* ===== Contact Form ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
